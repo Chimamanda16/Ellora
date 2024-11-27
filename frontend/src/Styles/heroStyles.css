@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.hero-btn{
+    border: none;
+    cursor: pointer;
+    padding: 3% 5%;
+}
+
+.hero-cont{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10%;
+    width: 70vw;
+}
+
+.hero-desc{
+    font-family: lato;
+}
+
+.hero-img{
+    cursor: pointer;
+}
+
+.hero-socials{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 50%;
+}
+
+.hero-socials i{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 3%;
+}
+
+.hero-text{
+    color: #fff;
+    width: 35%;
+}
+
+.hero-title{
+    display: inline;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+}

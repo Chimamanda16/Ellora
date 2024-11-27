@@ -1,0 +1,45 @@
+.about{
+    background-color: #fff;
+    padding: 3% 5%;
+}
+
+.about-btn{
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 3% 5%;
+}
+
+.about-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    position: relative;
+    width: 70vw;
+}
+
+.about-images{
+    display: flex;
+}
+
+.about-images, .about-text{
+    width: 40%;
+}
+
+.about-images img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.about-text{
+    background-image: url("../../bg-flower.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about-title{
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+}
