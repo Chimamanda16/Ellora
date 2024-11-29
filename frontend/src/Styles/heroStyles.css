@@ -8,11 +8,11 @@
 }
 
 .hero-cont{
+    background-color: #e49c9d;
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding: 10%;
-    width: 70vw;
 }
 
 .hero-desc{

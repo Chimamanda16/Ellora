@@ -3,6 +3,7 @@ import HeroComp from "./Hero"
 
 import "../Styles/styles.css"
 import AboutComp from "./About"
+import GalleryComp from "./Gallery"
 
 const HomeComp = () => {
   return (
@@ -10,6 +11,7 @@ const HomeComp = () => {
       <NavbarComp />
       <HeroComp />
       <AboutComp />
+      <GalleryComp />
     </>
     
   )

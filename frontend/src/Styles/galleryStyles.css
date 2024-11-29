@@ -1,0 +1,25 @@
+.gallery{
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    position: relative;
+}
+
+.gallery-cont{
+    background-color: #fff;
+}
+
+.gallery .img{
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    width: 500px;
+}
+
+.gallery .img img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
