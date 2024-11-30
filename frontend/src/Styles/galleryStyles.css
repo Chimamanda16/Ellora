@@ -1,25 +1,51 @@
 .gallery{
     display: grid;
-    justify-items: center;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    grid-template-columns: auto auto auto;
     margin: auto;
-    position: relative;
+    padding: 4%;
 }
 
 .gallery-cont{
-    background-color: #fff;
+    padding: 10%;
 }
-
-.gallery .img{
-    height: 500px;
-    margin: auto;
+.gallery-cont::before{
+    background-image: url("product-title-flower.webp");
+    background-repeat: no-repeat;
+    content: "";
+    height: 200px;
     position: absolute;
-    width: 500px;
+    width: 200px;
 }
 
-.gallery .img img{
+.gallery-description{
+    color: #6a6a6a;
+    font-family: lato;
+    text-align: center;
+}
+
+.gallery-img-cont{
+    height: 400px;
+    margin-bottom:20%;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-img-cont img{
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.gallery-title{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.item-price{
+    font-family: lato;
+}
+
+.item-title{
+    font-family: "Dancing Script", cursive;
 }

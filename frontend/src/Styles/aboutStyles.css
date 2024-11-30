@@ -37,6 +37,10 @@
     background-size: contain;
 }
 
+.about-text p{
+    color: #6a6a6a;
+}
+
 .about-title{
     font-family: "Dancing Script", cursive;
     font-size: 4rem;
