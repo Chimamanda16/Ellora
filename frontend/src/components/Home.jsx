@@ -1,9 +1,9 @@
 import NavbarComp from "./Navbar"
 import HeroComp from "./Hero"
-
-import "../Styles/styles.css"
 import AboutComp from "./About"
 import GalleryComp from "./Gallery"
+import CtaComp from "./Cta"
+import "../Styles/styles.css"
 
 const HomeComp = () => {
   return (
@@ -12,6 +12,7 @@ const HomeComp = () => {
       <HeroComp />
       <AboutComp />
       <GalleryComp />
+      <CtaComp />
     </>
     
   )

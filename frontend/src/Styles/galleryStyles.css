@@ -11,6 +11,7 @@
 }
 .gallery-cont::before{
     background-image: url("product-title-flower.webp");
+    background-position: center;
     background-repeat: no-repeat;
     content: "";
     height: 200px;
@@ -28,7 +29,6 @@
     height: 400px;
     margin-bottom:20%;
     position: relative;
-    width: 100%;
 }
 
 .gallery-img-cont img{
@@ -39,6 +39,7 @@
 
 .gallery-title{
     font-family: "Dancing Script", cursive;
+    font-size: 4rem;
     text-align: center;
 }
 
