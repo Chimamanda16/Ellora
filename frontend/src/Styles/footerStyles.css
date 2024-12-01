@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+}
+
+.footer-form{
+    width: 30%;
+}
+
+.footer-form input{
+    border: none;
+    border-bottom:1px solid #6a6a6a;
+    font-family: lato;
+    font-size: 20px;
+    margin: 2%;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-socials{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.footer-socials i{
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2%;
+}

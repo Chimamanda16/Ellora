@@ -3,6 +3,7 @@ import HeroComp from "./Hero"
 import AboutComp from "./About"
 import GalleryComp from "./Gallery"
 import CtaComp from "./Cta"
+import FooterComp from "./Footer"
 import "../Styles/styles.css"
 
 const HomeComp = () => {
@@ -13,6 +14,7 @@ const HomeComp = () => {
       <AboutComp />
       <GalleryComp />
       <CtaComp />
+      <FooterComp />
     </>
     
   )
