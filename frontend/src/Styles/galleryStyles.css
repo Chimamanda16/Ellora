@@ -1,3 +1,14 @@
+.product-button {
+    border: none;
+    cursor: pointer;
+    padding: 3% 5%;
+    background-color: #e49c9d;
+    color: #fff;
+    font-family: lato;
+    margin-right: 2%;
+    transition: background-color 0.3s ease;
+}
+
 .gallery{
     display: grid;
     gap: 3%;
@@ -26,13 +37,11 @@
 }
 
 .gallery-img-cont{
-    height: 400px;
-    margin-bottom:20%;
-    position: relative;
+    margin-bottom: 10%;
 }
 
 .gallery-img-cont img{
-    height: 100%;
+    height: 400px;
     object-fit: cover;
     width: 100%;
 }
