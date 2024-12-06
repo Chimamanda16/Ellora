@@ -10,10 +10,8 @@ const cartSlice = createSlice({
     reducers: {
         open: (state) =>{
             state.value = true;
-            console.log("Value when open:", state.value)
         },
         close: (state) => {
-            console.log("Value when closed:", state.value)
             state.value = false;
         }
     }

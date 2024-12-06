@@ -13,7 +13,6 @@ const GalleryComp = () => {
             <p className="item-price">₦100,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         <div className="gallery-img-cont">
@@ -22,7 +21,6 @@ const GalleryComp = () => {
             <p className="item-price">₦35,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         <div className="gallery-img-cont">
@@ -31,7 +29,6 @@ const GalleryComp = () => {
             <p className="item-price">₦45,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         <div className="gallery-img-cont">
@@ -40,7 +37,6 @@ const GalleryComp = () => {
             <p className="item-price">₦15,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         <div className="gallery-img-cont">
@@ -49,7 +45,6 @@ const GalleryComp = () => {
             <p className="item-price">₦45,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         <div className="gallery-img-cont">
@@ -58,7 +53,6 @@ const GalleryComp = () => {
             <p className="item-price">₦30,000</p>
             <div>
               <button className="product-button">Add to cart</button>
-              <button className="product-button">Buy</button>
             </div>
         </div>
         {/* <div className="gallery-img-cont">
