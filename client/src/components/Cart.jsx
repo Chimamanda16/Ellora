@@ -9,7 +9,6 @@ const CartComp = () => {
   })
   const dispatch = useDispatch()
   const value = useSelector((state) =>state.cart.value);
-  console.log(value);
   return (
     <>
         <div className="cart" style={{transform: value ? "translate(0%)" : "translate(100%)"}}>

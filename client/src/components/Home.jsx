@@ -4,6 +4,7 @@ import AboutComp from "./About"
 import GalleryComp from "./Gallery"
 import CtaComp from "./Cta"
 import FooterComp from "./Footer"
+import CartComp from "./Cart"
 import "../Styles/styles.css"
 
 const HomeComp = () => {
@@ -15,6 +16,7 @@ const HomeComp = () => {
       <GalleryComp />
       <CtaComp />
       <FooterComp />
+      <CartComp />
     </>
     
   )
