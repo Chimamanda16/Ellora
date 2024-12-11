@@ -1,0 +1,29 @@
+.admin{
+    background-color: #e49c9d;
+    height: 100vh;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.admin-title{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.upload-button{
+    padding: 1%;
+    width: fit-content;
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 40%;   
+}
+
+.upload-input{
+    margin-bottom: 4%;
+    outline: none;
+    padding: 2%;
+}
