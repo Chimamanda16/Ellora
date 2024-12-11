@@ -1,34 +1,15 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const uploadRouter = express.Router();
 const upload = require('../controllers/multer-storage-cloudinary');
-
-// Upload API
-// uploadRouter.post('/add-product', upload.single('file'), async (req, res) => {
-//     try {
-//         const { path, filename } = req.file;
-//         console.log(path, filename);
-//         console.log("Request received in the backend");
-//         // Save metadata to MongoDB
-//         // const newImage = new Image({
-//         //     url: path,
-//         //     publicId: req.file.filename, // Cloudinary public ID
-//         //     filename,
-//         //     uploadDate: new Date(),
-//         //     tags: ['example', 'tag'],
-//         // });
-//         // await newImage.save();
-
-//         // res.status(200).json({ message: 'Image uploaded successfully', url: path });
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).json({ message: 'Error uploading image' });
-//     }
-// });
+const saveProduct = require("../controllers/product-upload.controller");
 
 uploadRouter.post("/add-products",  upload.single('image'), async (req, res) => {
     try{
-        console.log(req.body);
+        console.log("Request received in backend")
+        const {name, price} = req.body;
+        const file = req.file;
+        console.log(name, price, file);
+        saveProduct(res, name, price, file);
     }
     catch(error){
         console.error(error);
