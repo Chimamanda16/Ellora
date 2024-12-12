@@ -27,3 +27,8 @@
     outline: none;
     padding: 2%;
 }
+
+.upload-state{
+    margin: auto;
+    width: 40%;
+}

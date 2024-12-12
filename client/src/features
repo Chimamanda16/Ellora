@@ -1,5 +1,4 @@
 Login on admin page
-Product upload on admin page
 Let product section load data from db
 Add items to local storage(for cart) when clicked
 Get items from local storage(for cart)

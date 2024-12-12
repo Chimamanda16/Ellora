@@ -1,7 +1,7 @@
 const express = require('express');
 const uploadRouter = express.Router();
 const upload = require('../controllers/multer-storage-cloudinary');
-const saveProduct = require("../controllers/product-upload.controller");
+const { saveProduct, getProducts } = require("../controllers/products.controller");
 
 uploadRouter.post("/add-products",  upload.single('image'), async (req, res) => {
     try{
@@ -15,5 +15,9 @@ uploadRouter.post("/add-products",  upload.single('image'), async (req, res) => 
         console.error(error);
     }
 });
+
+uploadRouter.get("/images", (req, res) =>{
+    getProducts(res)
+})
 
 module.exports = uploadRouter;

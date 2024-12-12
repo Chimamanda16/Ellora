@@ -23,7 +23,6 @@ const SubComp = function() {
                     method: "POST",
                     body: formData,
                 });
-                console.log(response);
                 return await response.json();
             }
             catch(error){
@@ -32,17 +31,19 @@ const SubComp = function() {
             
         },
         onSuccess: (data) => {
-            console.log("Data fetched successfully:", data);
+            console.log("Image upload complete:", data.message);
+            setImg("");
+            setProductName("");
+            setProductPrice("");
         },
         onError: (error) => {
-            console.error("Error fetching data:", error.message);
+            console.error("Image upload failed:", error.message);
         }
     });
 
     // Handle form submission
     function handleSubmit(e) {
         e.preventDefault();
-        console.log("Request received in frontend");
         setImg(e.target.productImg.files[0]);
         fetchImgMutation.mutate(); // Trigger the mutation
     }
@@ -58,13 +59,17 @@ const SubComp = function() {
                     <button type="submit" className="upload-button">Add Product</button>
                 </form>
                 {/* Show upload sucess or error in page */}
-                {fetchImgMutation.isLoading && <p>Loading...</p>}
+                {fetchImgMutation.isPending && <div className="upload-state">
+                        <p>Uploading</p>
+                    </div>}
                 {fetchImgMutation.isError && (
-                    <p>Error: {fetchImgMutation.error.message}</p>
+                    <div className="upload-state">
+                        <p>Error: {fetchImgMutation.error.message}</p>
+                    </div>
                 )}
                 {fetchImgMutation.isSuccess && (
-                    <div className="w-3/4 m-auto text-center">
-                        <p>{JSON.stringify(fetchImgMutation.data)}</p>
+                    <div className="upload-state">
+                        <p>Uploaded Succesfully</p>
                     </div>
                 )}
             </div>
