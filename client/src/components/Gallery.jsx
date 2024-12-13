@@ -1,9 +1,13 @@
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
+import { useDispatch } from "react-redux";
+import { clicked } from '../store/cartItemsSlice';
 import "../Styles/galleryStyles.css";
 
 const queryClient = new QueryClient();
 
 const GallerySubComp = () => {
+  
+  const dispatch = useDispatch();
 
   // Mutation for fetching images
   const {isLoading, isError, data, error} = useQuery({
@@ -38,19 +42,14 @@ const GallerySubComp = () => {
             <h2 className="item-title">{product.productName}</h2>
             <p className="item-price">{product.productPrice}</p>
             <div>
-              <button className="product-button">Add to cart</button>
+              <button className="product-button" onClick={() =>{ 
+                {dispatch(clicked(product))}
+              }}>Add to cart</button>
             </div>
           </div>
         ))}
-        
-        {/* <div className="gallery-img-cont">
-            <img src="teddy-package.jpg" alt="Teddy Package"/>
-            <h2 className="item-title">Teddy Package</h2>
-            <p className="item-price">₦30,000</p>
-        </div> */}
       </div>
     </div>
-    
   )
 }
 
