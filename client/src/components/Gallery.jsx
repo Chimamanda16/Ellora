@@ -40,7 +40,7 @@ const GallerySubComp = () => {
           <div className="gallery-img-cont" key={index}>
             <img src={product.imgUrl} alt={product.productName} />
             <h2 className="item-title">{product.productName}</h2>
-            <p className="item-price">{product.productPrice}</p>
+            <p className="item-price">₦{product.productPrice}</p>
             <div>
               <button className="product-button" onClick={() =>{ 
                 {dispatch(clicked(product))}
