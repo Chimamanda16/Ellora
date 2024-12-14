@@ -10,7 +10,6 @@ const CartComp = () => {
 
   useEffect(() =>{
     {document.getElementsByTagName("body")[0].style.overflow = value ? "hidden" : "auto"}
-
   }, [value]);
   return (
     <>

@@ -4,8 +4,8 @@ function getTotal(){
     let products = JSON.parse(localStorage.getItem("cartItems")) || [];
     let total = 0;
     products.forEach(element => {
-                console.log(total);
                 total += parseInt(element.productPrice);
+                console.log(total);
     });
     return total;
 }
@@ -20,10 +20,9 @@ const cartProducts = createSlice({
     initialState,
     reducers: {
         clicked: (state, action) =>{
-
             let prevItems = JSON.parse(localStorage.getItem("cartItems")) || [];
             localStorage.setItem("cartItems", JSON.stringify([ ...prevItems, action.payload]));
-            state.value = prevItems;
+            state.value = JSON.parse(localStorage.getItem("cartItems")) || [];
             state.total = getTotal();
         }
     }
