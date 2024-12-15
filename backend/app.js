@@ -7,7 +7,7 @@ router = require("./routes/index.routes");
 
 app.use(express.static(path.join(__dirname, 'client/dist')));
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from React
+    origin: 'https://ellora-frontend.onrender.com/', // Allow requests from React
 }));
 app.use(router);
 app.use(express.urlencoded({extended: false}));
