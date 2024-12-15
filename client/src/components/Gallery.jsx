@@ -13,7 +13,7 @@ const GallerySubComp = () => {
   const {isLoading, isError, data, error} = useQuery({
     queryKey: ["getProducts"],
     queryFn: async() =>{
-      const response = await fetch("http://localhost:5000/images");
+      const response = await fetch("https://ellora.onrender.com/images");
       return await response.json();
     }
     
