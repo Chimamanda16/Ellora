@@ -19,7 +19,7 @@ const SubComp = function() {
             formData.append('price', productPrice);
 
             try{
-                const response = await fetch("http://localhost:5000/add-products", {
+                const response = await fetch("https://ellora.onrender.com/add-products", {
                     method: "POST",
                     body: formData,
                 });
