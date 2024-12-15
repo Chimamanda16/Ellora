@@ -1,6 +1,6 @@
 .about{
     background-color: #fff;
-    padding: 3% 5%;
+    padding: 10%;
 }
 
 .about-btn{
@@ -14,9 +14,7 @@
 .about-cont{
     display: flex;
     justify-content: space-between;
-    padding: 10%;
     position: relative;
-    width: 70vw;
 }
 
 .about-images{
@@ -37,6 +35,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.about-text p{
+    color: #6a6a6a;
 }
 
 .about-title{

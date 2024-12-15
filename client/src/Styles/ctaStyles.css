@@ -1,0 +1,75 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 0 2%;
+}
+
+.cta-box{
+    position: relative;
+}
+
+.cta-comp::before{
+    background-image: url("cta-title-flower.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.cta-comp{
+    margin-bottom: 5%;
+}
+
+.cta-desc{
+    color: #6a6a6a;
+    font-family: lato;
+}
+
+.cta-image{
+    height: auto;
+    position: relative;
+    width: 60%;
+}
+
+.cta-text{
+    position: relative;
+    width: 40%;
+}
+
+.cta-text-box{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.cta-title{
+    font-size: 4rem;
+}
+
+.cta-title, .cta-desc{
+    text-align: center;
+}
+
+h2{
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 1%;
+}
+
+.cta-number{
+    align-self: center;
+    background-image: url("../cta-number-flower.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: lato;
+    margin-right: 10%;
+    padding: 7%;
+}
+
+video{
+    align-self: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}

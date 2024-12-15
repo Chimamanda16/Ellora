@@ -1,0 +1,64 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10; 
+}
+
+.cart{
+    background: #fff;
+    display: block;
+    font-family: lato;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 16px 20px 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: transform .5s ease;
+    width: 337px;
+    z-index: 999;
+}
+
+.cart-btn{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 6% 10%;
+    width: 100%;
+}
+
+.cart-close{
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 10%;
+}
+
+.cart-price-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.cart-product{
+    display: flex;
+    height: 100px;
+    border: 1px solid #000;
+    border-style: solid none;
+    margin-bottom: 10%;
+    padding: 1%;
+}
+
+.cart-product img{
+    height: 100%;
+    margin-right: 10%;
+}
+
+.cart-title{
+    font-family: "Dancing Script", cursive;
+}

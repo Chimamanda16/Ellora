@@ -2,10 +2,20 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Official website for Ellora",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chimamanda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.4",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0"
+  }
 }
