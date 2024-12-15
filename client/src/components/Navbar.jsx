@@ -11,9 +11,7 @@ const NavbarComp = () => {
             <h2 className="nav-title">Ellora</h2>
         </div>
         <div className="nav-icons">
-            <i className="fa-solid fa-user"></i>
             <i className="fa-solid fa-bag-shopping" onClick={() =>dispatch({ type: "cart/open"})}></i>
-            <i className="fa-solid fa-right-to-bracket"></i>
         </div>
     </motion.div>
   )

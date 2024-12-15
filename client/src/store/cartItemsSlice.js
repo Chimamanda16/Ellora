@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+//Get total price
 function getTotal(){
     let products = JSON.parse(localStorage.getItem("cartItems")) || [];
     let total = 0;
@@ -10,11 +11,13 @@ function getTotal(){
     return total;
 }
 
+//Initial store state
 const initialState = {
     value: JSON.parse(localStorage.getItem("cartItems")) || [],
     total: getTotal()
 }
 
+//Create slice
 const cartProducts = createSlice({
     name: "cart-items",
     initialState,
