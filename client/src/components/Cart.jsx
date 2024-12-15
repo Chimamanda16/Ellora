@@ -34,7 +34,7 @@ const CartComp = () => {
                   </div>
                 ))}
             </div>
-            <div className="cart-price-box">Total: <span style={{textAlign: "right"}}>{total},000</span></div>
+            <div className="cart-price-box">Total: <span style={{textAlign: "right"}}>{total}</span></div>
             <Link to="/payment"><button className="cart-btn">Proceed to Checkout</button></Link>
         </div>
         <div className={value ? "backdrop" : ""}></div>

@@ -5,8 +5,9 @@ function getTotal(){
     let products = JSON.parse(localStorage.getItem("cartItems")) || [];
     let total = 0;
     products.forEach(element => {
-                total += parseInt(element.productPrice);
-                console.log(total);
+        let totalStr =  element.productPrice;
+        total += parseInt(totalStr.replace(/\D/g, ""));
+        console.log(total);
     });
     return total;
 }

@@ -5,8 +5,9 @@ import "../Styles/PaymentStyles.css";
 
 const PaymentComp = () => {
     const publicKey = "pk_live_1a3bfa5213f964a27a34308ba77c71a914baffd4"
-    const amount = useSelector((state) => state.cartItems.total);
-      const [email, setEmail] = useState("");
+    const total = useSelector((state) => state.cartItems.total);
+    const amount = total * 100
+    const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
@@ -34,7 +35,7 @@ const PaymentComp = () => {
                 <input type="email" id="email-address" value={email} required autoComplete="on" onChange={(e) => setEmail(e.target.value)}/>
             </div>
             <div className="form-group">
-                <p id="amount">{amount},000</p>
+                <p id="amount">{total}</p>
             </div>
             <div className="form-group" style={{ marginBottom: "15%" }}>
                 <label htmlFor="name">Name</label>

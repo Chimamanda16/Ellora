@@ -13,6 +13,11 @@
 .form-group {
     margin-bottom: 20px;
 }
+
+.form-submit{
+    margin: auto;
+    width: 30%;
+}
   
 /* Styling for labels */
 label {
