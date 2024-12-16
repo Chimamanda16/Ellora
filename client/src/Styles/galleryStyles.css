@@ -58,3 +58,27 @@
     font-family: lato;
     transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 750px) {
+    .gallery{
+        grid-template-columns: auto auto ;
+        padding: 0%;
+    }
+
+    .gallery-cont{
+        margin-bottom: 15%;
+        padding: 5%;
+    }
+    .gallery-img-cont img{
+        height: 250px;
+    }
+    .gallery-title{
+        font-size: 3rem;
+    }
+    .gallery-cont::before{
+        background-size: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    
+}
