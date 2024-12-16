@@ -45,3 +45,25 @@
     font-family: "Dancing Script", cursive;
     font-size: 4rem;
 }
+
+@media screen and (max-width: 900px) and (min-width: 750px) {
+    .about-title{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .about-cont{
+        display: block;
+    }
+    .about-text{
+        margin: auto auto 10%;
+        text-align: center;
+        width: 88%;
+    }
+    .about-images{
+        width: 100%;
+    }
+    .about-title{
+        font-size: 3rem;
+    }
+}
