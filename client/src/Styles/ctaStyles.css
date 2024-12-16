@@ -73,3 +73,23 @@ video{
     position: absolute;
     width: 100%;
 }
+
+@media screen and (max-width: 750px) {
+    .content{
+        display: block;
+    }
+    .cta-comp::before{
+        background-size: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    .cta-image{
+        height: 300px;
+    }
+    .cta-image, .cta-text{
+        width: 100%;
+    }
+    .cta-title{
+        font-size: 3rem;
+    }
+}
