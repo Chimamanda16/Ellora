@@ -34,3 +34,27 @@
     font-size: 20px;
     padding: 2%;
 }
+
+@media screen and (max-width: 750px) {
+    .footer{
+        display: block;
+    }
+    .footer-form{
+        margin: 4% auto 4%;
+        width: 80%;
+    }
+    .footer-socials i{
+        font-size: 25px;
+        margin-bottom: 15%;
+        padding: 5%;
+    }
+    .footer-socials, .footer-logo{
+        width: 30%;
+    }
+    .footer-socials, .footer-logo{
+        margin: auto;
+    }
+    .footer-logo{
+        justify-content: center;
+    }
+}

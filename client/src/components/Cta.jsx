@@ -18,21 +18,21 @@ const CtaComp = () => {
             <div className="cta-text">
                 <div className="cta-text-box">
                     <h3 className="cta-number">1</h3>
-                    <div>
+                    <div className="cta-text-desc">
                         <h2>Choose Package</h2>
                         <p>Facilisis sed odio morbi quis commodo odio. Tristique et egestas quis ipsum suspendisse ultrices.</p>
                     </div>
                 </div>
                 <div className="cta-text-box">
                     <h3 className="cta-number">2</h3>
-                    <div className="">
+                    <div className="cta-text-desc">
                         <h2>Place an Order</h2>
                         <p>Duis at consectetur lorem donec massa. Sagittis id consectetur purus ut faucibus.</p>
                     </div>
                 </div>
                 <div className="cta-text-box">
                     <h3 className="cta-number">3</h3>
-                    <div className="">
+                    <div className="cta-text-desc">
                         <h2>Get your package</h2>
                         <p>Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.</p>
                     </div>

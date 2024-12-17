@@ -58,3 +58,33 @@
     font-family: lato;
     transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 750px) {
+    .gallery{
+        grid-template-columns: auto auto ;
+        padding: 0%;
+    }
+    .gallery-cont{
+        margin-bottom: 15%;
+        padding: 5%;
+    }
+    .gallery-img-cont img{
+        height: 200px;
+    }
+    .gallery-title{
+        font-size: 3rem;
+    }
+    .gallery-cont::before{
+       display: none;
+    }
+    .product-button{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) and (min-width: 750px){
+    .gallery-img-cont img{
+        height: 300px;
+    }
+}

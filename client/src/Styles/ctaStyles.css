@@ -6,6 +6,7 @@
 }
 
 .cta-box{
+    padding: 5%;
     position: relative;
 }
 
@@ -41,7 +42,6 @@
 
 .cta-text-box{
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .cta-title{
@@ -72,4 +72,31 @@ video{
     height: 100%;
     position: absolute;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .content{
+        display: block;
+    }
+    .cta-comp::before{
+        display: none;
+    }
+    .cta-image{
+        height: 300px;
+    }
+    .cta-image, .cta-text{
+        width: 100%;
+    }
+    .cta-text-desc p{
+        font-size: 18px;
+    }
+    .cta-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px){
+    .cta-image{
+        width: 55%;
+    }
 }

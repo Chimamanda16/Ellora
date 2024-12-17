@@ -32,18 +32,18 @@ const PaymentComp = () => {
         <form id="paymentForm" autoComplete="on">
             <div className="form-group">
                 <label htmlFor="email-address">Email Address</label>
-                <input type="email" id="email-address" value={email} required autoComplete="on" onChange={(e) => setEmail(e.target.value)}/>
+                <input className="email-input" type="email" id="email-address" value={email} required autoComplete="on" onChange={(e) => setEmail(e.target.value)}/>
             </div>
             <div className="form-group">
                 <p id="amount">{total}</p>
             </div>
             <div className="form-group" style={{ marginBottom: "15%" }}>
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" value={name} required autoComplete="on" onChange={(e) => setName(e.target.value)} />
+                <input className="name-input" type="text" id="name" value={name} required autoComplete="on" onChange={(e) => setName(e.target.value)} />
             </div>
             <div className="form-group">
                 <label htmlFor="phone-number">Phone Number</label>
-                <input type="tel" id="phone-number" value={phone} required autoComplete="on" onChange={(e) => setPhone(e.target.value)} />
+                <input className="phone-input" type="tel" id="phone-number" value={phone} required autoComplete="on" onChange={(e) => setPhone(e.target.value)} />
             </div>
             <div className="form-group">
                 <label htmlFor="street-name">Street</label>
