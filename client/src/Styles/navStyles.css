@@ -27,3 +27,16 @@
     font-size: 2rem;
     font-weight: 600;
 }
+
+@media screen and (max-width: 750px) {
+
+    .nav-logo, .nav-icons{
+        margin-top: 5%;
+    }
+    .nav-logo img{
+        width: 50px;
+    }
+    .nav-title{
+        font-size: 1.5rem;
+    }
+}

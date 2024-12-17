@@ -6,6 +6,7 @@
 }
 
 .cta-box{
+    padding: 5%;
     position: relative;
 }
 
@@ -78,15 +79,16 @@ video{
         display: block;
     }
     .cta-comp::before{
-        background-size: 100px;
-        height: 100px;
-        width: 100px;
+        display: none;
     }
     .cta-image{
         height: 300px;
     }
     .cta-image, .cta-text{
         width: 100%;
+    }
+    .cta-text-desc p{
+        font-size: 18px;
     }
     .cta-title{
         font-size: 3rem;

@@ -1,5 +1,6 @@
 .hero-btn{
     border: none;
+    color: #000;
     cursor: pointer;
     padding: 3% 5%;
 }
@@ -7,6 +8,7 @@
 .hero-cont{
     background-color: #e49c9d;
     display: flex;
+    font-family: lato;
     justify-content: space-between;
     margin: auto;
     padding: 10%;
@@ -44,4 +46,29 @@
     display: inline;
     font-family: "Dancing Script", cursive;
     font-size: 4rem;
+}
+@media screen and (max-width: 750px) {
+    .hero-cont{
+        min-height: 50vh;
+        position: relative;
+    }
+    .hero-img{
+        width: 95%;
+    }
+    .hero-text{
+        position: absolute;
+        background-color: #000c;
+        padding: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px){
+    .hero-text{
+        width: 35%;
+    }
+    .hero-img{
+        object-fit: cover;
+        width: 50%;
+    }
 }

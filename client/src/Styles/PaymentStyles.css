@@ -5,6 +5,7 @@
 
 /* Styling for form container */
 #paymentForm {
+    font-size: 20px;
     margin: 0 auto;
     width: 300px;
 }

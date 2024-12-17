@@ -43,6 +43,11 @@
         margin: 4% auto 4%;
         width: 80%;
     }
+    .footer-socials i{
+        font-size: 25px;
+        margin-bottom: 15%;
+        padding: 5%;
+    }
     .footer-socials, .footer-logo{
         width: 30%;
     }
