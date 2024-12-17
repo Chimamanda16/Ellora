@@ -41,7 +41,6 @@
 
 .cta-text-box{
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .cta-title{
@@ -91,5 +90,11 @@ video{
     }
     .cta-title{
         font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px){
+    .cta-image{
+        width: 55%;
     }
 }
