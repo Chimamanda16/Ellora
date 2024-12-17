@@ -3,7 +3,7 @@ import "../Styles/footerStyles.css";
 const FooterComp = () => {
   return (
     <div className="footer">
-        <div className="nav-logo">
+        <div className="nav-logo footer-logo">
             <img src="../../logo-flowers-black.png" alt="" />
             <h2 className="nav-title">Ellora</h2>
         </div>
