@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom"
+import { removed } from "../store/cartItemsSlice";
 import "../Styles/cartStyles.css";
 
 const CartComp = () => {
@@ -31,6 +32,9 @@ const CartComp = () => {
                       <h2>{product.productName}</h2>
                       <p>Price: ₦{product.productPrice}</p>
                     </div>
+                    <div className="remove-btn" onClick={() =>{ 
+                        {dispatch(removed(product.productId))}
+                      }}>X</div>
                   </div>
                 ))}
             </div>

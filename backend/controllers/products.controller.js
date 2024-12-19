@@ -8,7 +8,7 @@ function generateSimpleId(length = 8) {
       result += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return result;
-  }
+}
   
 //Save product to db
 async function saveProduct(res, name, price, file){

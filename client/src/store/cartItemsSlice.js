@@ -7,9 +7,15 @@ function getTotal(){
     products.forEach(element => {
         let totalStr =  element.productPrice;
         total += parseInt(totalStr.replace(/\D/g, ""));
-        console.log(total);
     });
     return total;
+}
+
+function removeItem(state, itemID){
+    let currentItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    let newItems = currentItems.filter((item) => item.productId !== itemID);
+    localStorage.setItem("cartItems", JSON.stringify(newItems));
+    return newItems;
 }
 
 //Initial store state
@@ -28,9 +34,15 @@ const cartProducts = createSlice({
             localStorage.setItem("cartItems", JSON.stringify([ ...prevItems, action.payload]));
             state.value = JSON.parse(localStorage.getItem("cartItems")) || [];
             state.total = getTotal();
+        },
+        removed: (state, action) =>{
+            const itemId = action.payload;
+            const current = removeItem(state, itemId);
+            state.value = current;
+            state.total = getTotal();
         }
     }
 });
 
-export const { clicked } = cartProducts.actions;
+export const { clicked, removed } = cartProducts.actions;
 export default cartProducts.reducer;
