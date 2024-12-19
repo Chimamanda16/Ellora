@@ -1,3 +1,17 @@
+.add-success{
+    background-color: #000c;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    left: 50%;
+    margin: auto;
+    padding: 2px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 150px;
+}
+
 .gallery{
     display: grid;
     gap: 3%;
@@ -9,6 +23,7 @@
 .gallery-cont{
     padding: 10%;
 }
+
 .gallery-cont::before{
     background-image: url("product-title-flower.webp");
     background-position: center;

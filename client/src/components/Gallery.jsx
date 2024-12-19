@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 import { useDispatch } from "react-redux";
 import { clicked } from '../store/cartItemsSlice';
@@ -6,6 +7,16 @@ import "../Styles/galleryStyles.css";
 const queryClient = new QueryClient();
 
 const GallerySubComp = () => {
+
+  const [added, setAdded] = useState(false);
+  useEffect(() =>{
+    const timer = setTimeout(() => {
+      setAdded(false);
+    }, 2000);
+
+    // Cleanup function
+    return () => clearTimeout(timer);
+  }, [added]);
   
   const dispatch = useDispatch();
 
@@ -42,13 +53,15 @@ const GallerySubComp = () => {
             <h2 className="item-title">{product.productName}</h2>
             <p className="item-price">₦{product.productPrice}</p>
             <div>
-              <button className="product-button" onClick={() =>{ 
+              <button className="product-button" onClick={() =>{
+                setAdded(true);
                 {dispatch(clicked(product))}
               }}>Add to cart</button>
             </div>
           </div>
         ))}
       </div>
+      <div className="add-success" style={{display: added ? "block" : "none"}}>Added to Cart!</div>
     </div>
   )
 }
