@@ -12,8 +12,7 @@ function getTotal(){
 }
 
 function removeItem(state, itemID){
-    let currentItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-    let newItems = currentItems.filter((item) => item.productId !== itemID);
+    let newItems = state.value.filter((item) => item.productId !== itemID);
     localStorage.setItem("cartItems", JSON.stringify(newItems));
     return newItems;
 }
@@ -30,8 +29,7 @@ const cartProducts = createSlice({
     initialState,
     reducers: {
         clicked: (state, action) =>{
-            let prevItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-            localStorage.setItem("cartItems", JSON.stringify([ ...prevItems, action.payload]));
+            localStorage.setItem("cartItems", JSON.stringify([ ...state.value, action.payload]));
             state.value = JSON.parse(localStorage.getItem("cartItems")) || [];
             state.total = getTotal();
         },
