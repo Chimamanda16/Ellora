@@ -4,7 +4,7 @@ const CtaComp = () => {
   return (
     <div className="cta-comp">
         <div className="cta-box">
-            <h2 className="cta-title">Our Garden Collections</h2>
+            <h2 className="cta-title">Our Collections</h2>
             <p className="cta-desc">Blossoms live in every color and aroma.</p>
             <p className="cta-desc">Beautifully share your emotions with our garden flowers.</p>
         </div>
@@ -20,21 +20,21 @@ const CtaComp = () => {
                     <h3 className="cta-number">1</h3>
                     <div className="cta-text-desc">
                         <h2>Choose Package</h2>
-                        <p>Facilisis sed odio morbi quis commodo odio. Tristique et egestas quis ipsum suspendisse ultrices.</p>
+                        <p>Select from our curated options, designed to suit every need and occasion perfectly.</p>
                     </div>
                 </div>
                 <div className="cta-text-box">
                     <h3 className="cta-number">2</h3>
                     <div className="cta-text-desc">
                         <h2>Place an Order</h2>
-                        <p>Duis at consectetur lorem donec massa. Sagittis id consectetur purus ut faucibus.</p>
+                        <p>Order now to enjoy seamless service. Quality and satisfaction are our priorities.</p>
                     </div>
                 </div>
                 <div className="cta-text-box">
                     <h3 className="cta-number">3</h3>
                     <div className="cta-text-desc">
                         <h2>Get your package</h2>
-                        <p>Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+                        <p>Receive your gift quickly with ease, crafted to bring joy and delight.</p>
                     </div>
                 </div>
             </div>
