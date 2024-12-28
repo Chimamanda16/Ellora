@@ -6,7 +6,7 @@ const HeroComp = () => {
     <div className="hero-cont">
         <motion.div className="hero-text" initial={{opacity:  0, x:-50}} animate={{opacity: 1, x: 0,  transition: { duration: 1, delay: 0.5}}}>
             <h1 className="hero-title">Gifts for every event</h1><span><img src="green-leaf.webp" alt="" /></span>
-            <p className="hero-desc">The best gifts for the ones you love. Fast gift delivery daily around the clock.</p>
+            <p className="hero-desc">The best gifts for the ones you love. Fast gift delivery daily and around the clock.</p>
             <motion.button className="hero-btn" whileHover={{ scale: 1.1 }}
                                                 whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                                 >SHOP NOW</motion.button>
