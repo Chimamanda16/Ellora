@@ -16,14 +16,7 @@ const HeroComp = () => {
                 <i className="fa-brands fa-instagram"></i>
             </div>
         </motion.div>
-        <motion.img src="hero-img.png" alt="" className="hero-img"  initial={{scale: 0.9, opacity: 0 }} animate={{
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                  duration: 1.2,
-                  delay: 1.5
-                  }
-                }}/>
+        <motion.img src="hero-img.png" alt="" className="hero-img"/>
     </div>
     
   )
