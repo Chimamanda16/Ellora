@@ -31,7 +31,7 @@ const GallerySubComp = () => {
   });
   if(isLoading){
       return(
-        <p>Fetching products...</p>
+        <p>Fetching products...Please wait</p>
       )
   }
   if(isError){

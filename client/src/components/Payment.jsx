@@ -46,7 +46,7 @@ const PaymentComp = () => {
                 <input className="phone-input" type="tel" id="phone-number" value={phone} required autoComplete="on" onChange={(e) => setPhone(e.target.value)} />
             </div>
             <div className="form-group">
-                <label htmlFor="street-name">Street</label>
+                <label htmlFor="street-name">Delivery Address</label>
                 <input type="text" id="street-name" value={address} autoComplete="on" onChange={(e) => setAddress(e.target.value)} />
             </div>
         </form>
