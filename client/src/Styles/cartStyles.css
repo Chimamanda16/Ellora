@@ -69,3 +69,7 @@
 .remove-btn{
     cursor: pointer;
 }
+
+.quantity-controls span{
+    margin: 0 6%;
+}
