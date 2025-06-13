@@ -5,6 +5,13 @@
     padding: 2% 2%;
 }
 
+.footer-btn{
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    padding: 2% 5%;
+}
+
 .footer-form{
     width: 30%;
 }

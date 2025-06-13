@@ -10,6 +10,7 @@ const FooterComp = () => {
         </div>
         <form action="" className="footer-form">
             <input type="email" placeholder="Email"/>
+            <button className="footer-btn">Submit</button>
         </form>
         <div className="footer-socials">
           <Link target="_blank" to="https://wa.me/+2349160013762"><i className="fa-brands fa-whatsapp"></i></Link>
