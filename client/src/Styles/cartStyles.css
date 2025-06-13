@@ -28,6 +28,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    font-size: 15px;
     text-transform: uppercase;
     padding: 6% 10%;
     width: 100%;
@@ -62,6 +63,7 @@
 
 .cart-title{
     font-family: "Dancing Script", cursive;
+    font-size: 30px;
 }
 
 .remove-btn{
