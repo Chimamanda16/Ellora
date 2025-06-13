@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom"
-import { removed } from "../store/cartItemsSlice";
+import { removed, incrementQty, decrementQty } from "../store/cartItemsSlice";
 import "../Styles/cartStyles.css";
 
 const CartComp = () => {
@@ -30,6 +30,12 @@ const CartComp = () => {
                     <img src={product.imgUrl} alt={product.productName} />
                     <div className="product-detail">
                       <h2>{product.productName}</h2>
+                      <div className="quantity-controls">
+                        <button onClick={() => dispatch(decrementQty(product.productId))}>-</button>
+                        <span>{product.quantity}</span>
+                        <button onClick={() => dispatch(incrementQty(product.productId))}>+</button>
+                      </div>
+
                       <p>Price: ₦{product.productPrice}</p>
                     </div>
                     <div className="remove-btn" onClick={() =>{ 

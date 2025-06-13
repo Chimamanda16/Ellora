@@ -48,7 +48,7 @@
 
 .cart-product{
     display: flex;
-    height: 100px;
+    height: 150px;
     border: 1px solid #000;
     border-style: solid none;
     justify-content: space-between;
@@ -68,4 +68,8 @@
 
 .remove-btn{
     cursor: pointer;
+}
+
+.quantity-controls span{
+    margin: 0 6%;
 }
