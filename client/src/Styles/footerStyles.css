@@ -28,11 +28,9 @@
 }
 
 .footer-socials i{
-    border: 1px solid #000;
-    border-radius: 50%;
+    color: #e49c9d;
     cursor: pointer;
-    font-size: 20px;
-    padding: 2%;
+    font-size: 28px;
 }
 
 @media screen and (max-width: 750px) {
