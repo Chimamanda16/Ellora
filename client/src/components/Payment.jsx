@@ -35,6 +35,7 @@ const PaymentComp = () => {
                 <input className="email-input" type="email" id="email-address" value={email} required autoComplete="on" onChange={(e) => setEmail(e.target.value)}/>
             </div>
             <div className="form-group">
+                <p className="amount-label">Amount</p>
                 <p id="amount">{total}</p>
             </div>
             <div className="form-group" style={{ marginBottom: "15%" }}>

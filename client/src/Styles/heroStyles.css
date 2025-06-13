@@ -24,7 +24,6 @@
 }
 
 .hero-socials{
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
@@ -32,10 +31,9 @@
 }
 
 .hero-socials i{
-    border: 1px solid #fff;
-    border-radius: 50%;
+    color: #fff;
     cursor: pointer;
-    padding: 3%;
+    font-size: 28px;
 }
 
 .hero-text{
@@ -55,6 +53,9 @@
     }
     .hero-img{
         width: 95%;
+    }
+    .hero-socials i{
+        color: #e49c9d;
     }
     .hero-text{
         position: absolute;

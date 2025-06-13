@@ -1,3 +1,11 @@
+/* Styling for labels */
+.amount-label, label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+
 .pay-title{
   margin: 5% auto 5%;
   width: 300px;
@@ -18,13 +26,6 @@
 .form-submit{
     margin: auto;
     width: 30%;
-}
-  
-/* Styling for labels */
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
 }
   
 /* Styling for input fields */

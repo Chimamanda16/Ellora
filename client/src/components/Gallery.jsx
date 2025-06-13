@@ -43,7 +43,7 @@ const GallerySubComp = () => {
   }
 
   return (
-    <div className="gallery-cont">
+    <div className="gallery-cont" id="shop-section">
       <h2 className="gallery-title">Shop Our Products</h2>
       <p className="gallery-description">All varieties of gift boxes, treat boxes and bouquets available</p>
       <div className="gallery">
