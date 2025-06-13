@@ -30,6 +30,7 @@ const CartComp = () => {
                     <img src={product.imgUrl} alt={product.productName} />
                     <div className="product-detail">
                       <h2>{product.productName}</h2>
+                      <p>Quantity:</p>
                       <p>Price: ₦{product.productPrice}</p>
                     </div>
                     <div className="remove-btn" onClick={() =>{ 
